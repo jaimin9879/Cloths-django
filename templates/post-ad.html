@@ -1,0 +1,126 @@
+{% load static %}
+{% include 'common/header.html' %}
+	<!-- breadcrumbs -->
+	<div class="w3layouts-breadcrumbs text-center">
+		<div class="container">
+			<span class="agile-breadcrumbs"><a href="index-2.html"><i class="fa fa-home home_1"></i></a> / <span>Post your Ad</span></span>
+		</div>
+	</div>
+	<!-- //breadcrumbs -->
+	<!---728x90--->
+
+	<!-- Submit Ad -->
+	<div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="w3-head">Post an Ad</h2>
+			<div class="post-ad-form">
+				<form>
+					<label>Select Category <span>*</span></label>
+					<select class="">
+					  <option>Select Category</option>
+					  <option>Mobiles</option>
+					  <option>Electronics and Appliances</option>
+					  <option>Cars</option>
+					  <option>Bikes</option>
+					  <option>Furniture</option>
+					  <option>Pets</option>
+					  <option>Books, Sports and hobbies</option>
+					  <option>Fashion</option>
+					  <option>Kids</option>
+					  <option>Services</option>
+					  <option>Real, Estate</option>
+					</select>
+					<div class="clearfix"></div>
+					<label>Ad Title <span>*</span></label>
+					<input type="text" class="phone" placeholder="">
+					<div class="clearfix"></div>
+					<label>Ad Description <span>*</span></label>
+					<textarea class="mess" placeholder="Write few lines about your product"></textarea>
+					<div class="clearfix"></div>
+					<!---728x90--->
+
+				<div class="upload-ad-photos">
+				<label>Photos for your ad :</label>	
+					<div class="photos-upload-view">
+						<form id="upload" action="https://p.w3layouts.com/demos/aug-2016/24-08-2016/resale_v2/web/index.html" method="POST" enctype="multipart/form-data">
+
+						<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+						<div>
+							<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+							<div id="filedrag">or drop files here</div>
+						</div>
+
+						<div id="submitbutton">
+							<button type="submit">Upload Files</button>
+						</div>
+
+						</form>
+
+						<div id="messages">
+						<p>Status Messages</p>
+						</div>
+						</div>
+					<div class="clearfix"></div>
+						<script src="js/filedrag.js"></script>
+				</div>
+					<div class="personal-details">
+					<form>
+						<label>Your Name <span>*</span></label>
+						<input type="text" class="name" placeholder="">
+						<div class="clearfix"></div>
+						<label>Your Mobile No <span>*</span></label>
+						<input type="text" class="phone" placeholder="">
+						<div class="clearfix"></div>
+						<label>Your Email Address<span>*</span></label>
+						<input type="text" class="email" placeholder="">
+						<div class="clearfix"></div>
+						<p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+					<input type="submit" value="Post">					
+					<div class="clearfix"></div>
+					</form>
+					</div>
+			</div>
+		</div>	
+	</div>
+	<!-- // Submit Ad -->
+	<!---728x90--->
+
+
+</body>
+		<!-- Navigation-JavaScript -->
+			<script src="js/classie.js"></script>
+			<script src="js/main.js"></script>
+		<!-- //Navigation-JavaScript -->
+		<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+					*/
+										
+					$().UItoTop({ easingType: 'easeOutQuart' });
+										
+					});
+			</script>
+			<!-- start-smoth-scrolling -->
+			<script type="text/javascript" src="js/move-top.js"></script>
+			<script type="text/javascript" src="js/easing.js"></script>
+			<script type="text/javascript">
+				jQuery(document).ready(function($) {
+					$(".scroll").click(function(event){		
+						event.preventDefault();
+						$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+					});
+				});
+			</script>
+			<!-- start-smoth-scrolling -->
+		<!-- //here ends scrolling icon -->
+
+<!-- Mirrored from p.w3layouts.com/demos/aug-2016/24-08-2016/resale_v2/web/post-ad.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Oct 2018 11:00:43 GMT -->
+</html>

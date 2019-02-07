@@ -1,0 +1,143 @@
+{% load static %}
+{% include 'common/header.html' %}
+	<!-- breadcrumbs -->
+	<div class="w3layouts-breadcrumbs text-center">
+		<div class="container">
+			<span class="agile-breadcrumbs"><a href="{% url 'home'%}"><i class="fa fa-home home_1"></i></a> / <span>Contact</span></span>
+		</div>
+	</div>
+	<!-- //breadcrumbs -->
+	<!---728x90--->
+
+	<!-- contact -->
+	<div class="contact main-grid-border">
+		<div class="container">
+			<h2 class="w3-head text-center">Contact Us</h2>
+			<section id="hire">    
+				<form id="filldetails" action="{% url 'contact'%}" method="post"> {% csrf_token %}
+					  <div class="field name-box">
+							<input type="text" name="name" placeholder="Who Are You?"/>
+							<label>Name</label>
+							<span class="ss-icon">check</span>
+					  </div>
+					  
+					  <div class="field email-box">
+							<input type="text" name="email" placeholder="example@email.com"/>
+							<label>Email</label>
+							<span class="ss-icon">check</span>
+					  </div>
+
+
+					  <div class="field msg-box">
+							<textarea name = "content" id="content" rows="4" placeholder="Your message goes here..."></textarea>
+							<label>Your Msg</label>
+							<span class="ss-icon">check</span>
+					  </div>
+
+					 
+
+		<div class="clear"></div>
+		<form class="submit">
+		<input class="button" type="submit" value="Send" />
+		</form>
+		<!-- JavaScript Includes -->
+		<script src={% static "js/jquery.knob.js" %}></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src={% static "js/jquery.ui.widget.js" %}></script>
+		<script src={% static "js/jquery.fileupload.js" %}></script>
+		
+		<!-- Our main JS file -->
+		<script src={% static "js/script.js" %}></script>
+						</div>
+			</section>
+			<script>
+				  $('textarea').blur(function () {
+				$('#hire textarea').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('textarea + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('textarea + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:first-child input').blur(function () {
+				$('#hire .field:first-child input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:first-child input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:first-child input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(2) input').blur(function () {
+				$('#hire .field:nth-child(2) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(2) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(2) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(3) input').blur(function () {
+				$('#hire .field:nth-child(3) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(3) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(3) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(4) input').blur(function () {
+				$('#hire .field:nth-child(4) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(4) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(4) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+		  //@ sourceURL=pen.js
+		</script>    
+		<script>
+	  if (document.location.search.match(/type=embed/gi)) {
+		window.parent.postMessage("resize", "*");
+	  }
+	</script>
+		</div>	
+		<!---728x90--->
+
+		<!-- address -->
+		<div class="container">
+			<div class="agileits-get-us">
+				<ul>
+					<li><i class="fa fa-map-marker" aria-hidden="true"></i>Ahmedabad 382443 </li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>  +91 9586867625</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com"> pateljaimin9879@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //address -->
+		<!---728x90--->
+		<div class="map-w3layouts">
+			<h3>Location</h3>
+            <iframe width="600" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANvfbzflRqc71vCVSJz1HM5gfg_hzaEIg&q=101,1st Floor, Parshwa Tower,, Above Kotak Mahindra Bank, Near Pakwan II, SG Highway, Bodakdev, Ahmedabad, Gujarat 380054" allowfullscreen></iframe>
+		</div>
+
+
+{% include 'common/footer.html' %}
